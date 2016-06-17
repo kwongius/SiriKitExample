@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A2217991D145BC4002B1336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2217981D145BC4002B1336 /* AppDelegate.swift */; };
+		0A22179B1D145BC4002B1336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22179A1D145BC4002B1336 /* ViewController.swift */; };
+		0A22179E1D145BC4002B1336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A22179C1D145BC4002B1336 /* Main.storyboard */; };
+		0A2217A01D145BC4002B1336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A22179F1D145BC4002B1336 /* Assets.xcassets */; };
+		0A2217A31D145BC4002B1336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2217A11D145BC4002B1336 /* LaunchScreen.storyboard */; };
+		0A2217B11D145D4C002B1336 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2217B01D145D4C002B1336 /* IntentHandler.swift */; };
+		0A2217BA1D145D4C002B1336 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2217B91D145D4C002B1336 /* IntentsUI.framework */; };
+		0A2217BD1D145D4C002B1336 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2217BC1D145D4C002B1336 /* IntentViewController.swift */; };
+		0A2217C01D145D4C002B1336 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2217BE1D145D4C002B1336 /* MainInterface.storyboard */; };
+		0A2217C41D145D4C002B1336 /* SiriExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A2217B71D145D4C002B1336 /* SiriExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A2217C71D145D4D002B1336 /* SiriExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A2217AE1D145D4C002B1336 /* SiriExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A2217D91D1466D8002B1336 /* PixioWalletCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2217D81D1466D8002B1336 /* PixioWalletCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A2217DD1D1466D8002B1336 /* PixioWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */; };
+		0A2217DE1D1466D8002B1336 /* PixioWalletCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A2217E41D1466E9002B1336 /* BitcoinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2217E31D1466E9002B1336 /* BitcoinConverter.swift */; };
+		0A2217E61D14677E002B1336 /* PixioWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */; };
+		0A2217EA1D1467F8002B1336 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2217E91D1467F8002B1336 /* Wallet.swift */; };
+		0A2217EE1D147330002B1336 /* QRCodeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2217ED1D147330002B1336 /* QRCodeSwift.swift */; };
+		0A2217EF1D14973A002B1336 /* PixioWalletCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A2217C21D145D4C002B1336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A22178D1D145BC4002B1336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2217B61D145D4C002B1336;
+			remoteInfo = SiriExtensionUI;
+		};
+		0A2217C51D145D4D002B1336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A22178D1D145BC4002B1336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2217AD1D145D4C002B1336;
+			remoteInfo = SiriExtension;
+		};
+		0A2217DB1D1466D8002B1336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A22178D1D145BC4002B1336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2217D51D1466D8002B1336;
+			remoteInfo = PixioWalletCore;
+		};
+		0A2217EB1D1469D2002B1336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A22178D1D145BC4002B1336 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2217D51D1466D8002B1336;
+			remoteInfo = PixioWalletCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A2217CE1D145D4D002B1336 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A2217C41D145D4C002B1336 /* SiriExtensionUI.appex in Embed App Extensions */,
+				0A2217C71D145D4D002B1336 /* SiriExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217E21D1466D9002B1336 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0A2217DE1D1466D8002B1336 /* PixioWalletCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A2217951D145BC4002B1336 /* PixioWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixioWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2217981D145BC4002B1336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A22179A1D145BC4002B1336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A22179D1D145BC4002B1336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A22179F1D145BC4002B1336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A2217A21D145BC4002B1336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A2217A41D145BC4002B1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2217AE1D145D4C002B1336 /* SiriExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2217B01D145D4C002B1336 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		0A2217B21D145D4C002B1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2217B71D145D4C002B1336 /* SiriExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2217B91D145D4C002B1336 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		0A2217BC1D145D4C002B1336 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		0A2217BF1D145D4C002B1336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0A2217C11D145D4C002B1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PixioWalletCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2217D81D1466D8002B1336 /* PixioWalletCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PixioWalletCore.h; sourceTree = "<group>"; };
+		0A2217DA1D1466D8002B1336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A2217E31D1466E9002B1336 /* BitcoinConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinConverter.swift; sourceTree = "<group>"; };
+		0A2217E91D1467F8002B1336 /* Wallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		0A2217ED1D147330002B1336 /* QRCodeSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeSwift.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A2217921D145BC4002B1336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217DD1D1466D8002B1336 /* PixioWalletCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217AB1D145D4C002B1336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217E61D14677E002B1336 /* PixioWalletCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217B41D145D4C002B1336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217EF1D14973A002B1336 /* PixioWalletCore.framework in Frameworks */,
+				0A2217BA1D145D4C002B1336 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217D21D1466D8002B1336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A22178C1D145BC4002B1336 = {
+			isa = PBXGroup;
+			children = (
+				0A2217971D145BC4002B1336 /* PixioWallet */,
+				0A2217AF1D145D4C002B1336 /* SiriExtension */,
+				0A2217BB1D145D4C002B1336 /* SiriExtensionUI */,
+				0A2217D71D1466D8002B1336 /* PixioWalletCore */,
+				0A2217B81D145D4C002B1336 /* Frameworks */,
+				0A2217961D145BC4002B1336 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A2217961D145BC4002B1336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A2217951D145BC4002B1336 /* PixioWallet.app */,
+				0A2217AE1D145D4C002B1336 /* SiriExtension.appex */,
+				0A2217B71D145D4C002B1336 /* SiriExtensionUI.appex */,
+				0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A2217971D145BC4002B1336 /* PixioWallet */ = {
+			isa = PBXGroup;
+			children = (
+				0A2217981D145BC4002B1336 /* AppDelegate.swift */,
+				0A22179A1D145BC4002B1336 /* ViewController.swift */,
+				0A22179C1D145BC4002B1336 /* Main.storyboard */,
+				0A22179F1D145BC4002B1336 /* Assets.xcassets */,
+				0A2217A11D145BC4002B1336 /* LaunchScreen.storyboard */,
+				0A2217A41D145BC4002B1336 /* Info.plist */,
+			);
+			path = PixioWallet;
+			sourceTree = "<group>";
+		};
+		0A2217AF1D145D4C002B1336 /* SiriExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0A2217B01D145D4C002B1336 /* IntentHandler.swift */,
+				0A2217B21D145D4C002B1336 /* Info.plist */,
+			);
+			path = SiriExtension;
+			sourceTree = "<group>";
+		};
+		0A2217B81D145D4C002B1336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2217B91D145D4C002B1336 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A2217BB1D145D4C002B1336 /* SiriExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				0A2217BC1D145D4C002B1336 /* IntentViewController.swift */,
+				0A2217ED1D147330002B1336 /* QRCodeSwift.swift */,
+				0A2217BE1D145D4C002B1336 /* MainInterface.storyboard */,
+				0A2217C11D145D4C002B1336 /* Info.plist */,
+			);
+			path = SiriExtensionUI;
+			sourceTree = "<group>";
+		};
+		0A2217D71D1466D8002B1336 /* PixioWalletCore */ = {
+			isa = PBXGroup;
+			children = (
+				0A2217D81D1466D8002B1336 /* PixioWalletCore.h */,
+				0A2217DA1D1466D8002B1336 /* Info.plist */,
+				0A2217E31D1466E9002B1336 /* BitcoinConverter.swift */,
+				0A2217E91D1467F8002B1336 /* Wallet.swift */,
+			);
+			path = PixioWalletCore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A2217D31D1466D8002B1336 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217D91D1466D8002B1336 /* PixioWalletCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A2217941D145BC4002B1336 /* PixioWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2217A71D145BC4002B1336 /* Build configuration list for PBXNativeTarget "PixioWallet" */;
+			buildPhases = (
+				0A2217911D145BC4002B1336 /* Sources */,
+				0A2217921D145BC4002B1336 /* Frameworks */,
+				0A2217931D145BC4002B1336 /* Resources */,
+				0A2217CE1D145D4D002B1336 /* Embed App Extensions */,
+				0A2217E21D1466D9002B1336 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A2217C31D145D4C002B1336 /* PBXTargetDependency */,
+				0A2217C61D145D4D002B1336 /* PBXTargetDependency */,
+				0A2217DC1D1466D8002B1336 /* PBXTargetDependency */,
+			);
+			name = PixioWallet;
+			productName = PixioWallet;
+			productReference = 0A2217951D145BC4002B1336 /* PixioWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A2217AD1D145D4C002B1336 /* SiriExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2217CD1D145D4D002B1336 /* Build configuration list for PBXNativeTarget "SiriExtension" */;
+			buildPhases = (
+				0A2217AA1D145D4C002B1336 /* Sources */,
+				0A2217AB1D145D4C002B1336 /* Frameworks */,
+				0A2217AC1D145D4C002B1336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A2217EC1D1469D2002B1336 /* PBXTargetDependency */,
+			);
+			name = SiriExtension;
+			productName = SiriExtension;
+			productReference = 0A2217AE1D145D4C002B1336 /* SiriExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0A2217B61D145D4C002B1336 /* SiriExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2217CC1D145D4D002B1336 /* Build configuration list for PBXNativeTarget "SiriExtensionUI" */;
+			buildPhases = (
+				0A2217B31D145D4C002B1336 /* Sources */,
+				0A2217B41D145D4C002B1336 /* Frameworks */,
+				0A2217B51D145D4C002B1336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriExtensionUI;
+			productName = SiriExtensionUI;
+			productReference = 0A2217B71D145D4C002B1336 /* SiriExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		0A2217D51D1466D8002B1336 /* PixioWalletCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2217DF1D1466D9002B1336 /* Build configuration list for PBXNativeTarget "PixioWalletCore" */;
+			buildPhases = (
+				0A2217D11D1466D8002B1336 /* Sources */,
+				0A2217D21D1466D8002B1336 /* Frameworks */,
+				0A2217D31D1466D8002B1336 /* Headers */,
+				0A2217D41D1466D8002B1336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixioWalletCore;
+			productName = PixioWalletCore;
+			productReference = 0A2217D61D1466D8002B1336 /* PixioWalletCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A22178D1D145BC4002B1336 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Pixio;
+				TargetAttributes = {
+					0A2217941D145BC4002B1336 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					0A2217AD1D145D4C002B1336 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					0A2217B61D145D4C002B1336 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					0A2217D51D1466D8002B1336 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A2217901D145BC4002B1336 /* Build configuration list for PBXProject "PixioWallet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A22178C1D145BC4002B1336;
+			productRefGroup = 0A2217961D145BC4002B1336 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A2217941D145BC4002B1336 /* PixioWallet */,
+				0A2217AD1D145D4C002B1336 /* SiriExtension */,
+				0A2217B61D145D4C002B1336 /* SiriExtensionUI */,
+				0A2217D51D1466D8002B1336 /* PixioWalletCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A2217931D145BC4002B1336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217A31D145BC4002B1336 /* LaunchScreen.storyboard in Resources */,
+				0A2217A01D145BC4002B1336 /* Assets.xcassets in Resources */,
+				0A22179E1D145BC4002B1336 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217AC1D145D4C002B1336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217B51D145D4C002B1336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217C01D145D4C002B1336 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217D41D1466D8002B1336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A2217911D145BC4002B1336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A22179B1D145BC4002B1336 /* ViewController.swift in Sources */,
+				0A2217991D145BC4002B1336 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217AA1D145D4C002B1336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217B11D145D4C002B1336 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217B31D145D4C002B1336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217BD1D145D4C002B1336 /* IntentViewController.swift in Sources */,
+				0A2217EE1D147330002B1336 /* QRCodeSwift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2217D11D1466D8002B1336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2217EA1D1467F8002B1336 /* Wallet.swift in Sources */,
+				0A2217E41D1466E9002B1336 /* BitcoinConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A2217C31D145D4C002B1336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2217B61D145D4C002B1336 /* SiriExtensionUI */;
+			targetProxy = 0A2217C21D145D4C002B1336 /* PBXContainerItemProxy */;
+		};
+		0A2217C61D145D4D002B1336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2217AD1D145D4C002B1336 /* SiriExtension */;
+			targetProxy = 0A2217C51D145D4D002B1336 /* PBXContainerItemProxy */;
+		};
+		0A2217DC1D1466D8002B1336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2217D51D1466D8002B1336 /* PixioWalletCore */;
+			targetProxy = 0A2217DB1D1466D8002B1336 /* PBXContainerItemProxy */;
+		};
+		0A2217EC1D1469D2002B1336 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2217D51D1466D8002B1336 /* PixioWalletCore */;
+			targetProxy = 0A2217EB1D1469D2002B1336 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A22179C1D145BC4002B1336 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A22179D1D145BC4002B1336 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A2217A11D145BC4002B1336 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2217A21D145BC4002B1336 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0A2217BE1D145D4C002B1336 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2217BF1D145D4C002B1336 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A2217A51D145BC4002B1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A2217A61D145BC4002B1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A2217A81D145BC4002B1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PixioWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0A2217A91D145BC4002B1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PixioWallet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0A2217C81D145D4D002B1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWallet.SiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0A2217C91D145D4D002B1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWallet.SiriExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0A2217CA1D145D4D002B1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWallet.SiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0A2217CB1D145D4D002B1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SiriExtensionUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWallet.SiriExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0A2217E01D1466D9002B1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PixioWalletCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWalletCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A2217E11D1466D9002B1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PixioWalletCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixio.PixioWalletCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A2217901D145BC4002B1336 /* Build configuration list for PBXProject "PixioWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2217A51D145BC4002B1336 /* Debug */,
+				0A2217A61D145BC4002B1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2217A71D145BC4002B1336 /* Build configuration list for PBXNativeTarget "PixioWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2217A81D145BC4002B1336 /* Debug */,
+				0A2217A91D145BC4002B1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2217CC1D145D4D002B1336 /* Build configuration list for PBXNativeTarget "SiriExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2217CA1D145D4D002B1336 /* Debug */,
+				0A2217CB1D145D4D002B1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A2217CD1D145D4D002B1336 /* Build configuration list for PBXNativeTarget "SiriExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2217C81D145D4D002B1336 /* Debug */,
+				0A2217C91D145D4D002B1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A2217DF1D1466D9002B1336 /* Build configuration list for PBXNativeTarget "PixioWalletCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2217E01D1466D9002B1336 /* Debug */,
+				0A2217E11D1466D9002B1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A22178D1D145BC4002B1336 /* Project object */;
+}
