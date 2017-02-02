@@ -46,8 +46,8 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
         if let note = intent.note {
             params["message"] = note
         }
-        if let amount = amount?.getBitcoinAmount() {
-            params["amount"] = amount.amount.description
+        if let amount = amount?.getBitcoinAmount()?.amount {
+            params["amount"] = amount.description
         }
         
         
@@ -64,7 +64,7 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
             imageView.image = nil
         }
         
-        label.text = amount?.getBitcoinAmount().map({ $0.amount.description + " BTC" })
+        label.text = amount?.getBitcoinAmount()?.amount.map({ $0.description + " BTC" })
         
         completion(desiredSize)
     }

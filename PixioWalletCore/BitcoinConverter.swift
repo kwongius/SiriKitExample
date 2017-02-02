@@ -18,20 +18,20 @@ private enum Currency: String {
     // 1 bitcoin in each currency
     var conversionRate: NSDecimalNumber {
         switch self {
-        case USD:
+        case .USD:
             return 740
-        case CNY:
+        case .CNY:
             return 5000
-        case EUR:
+        case .EUR:
             return 666
-        case BTC:
+        case .BTC:
             return 1
         }
     }
     
     var subunit: Int16 {
         switch self {
-        case BTC:
+        case .BTC:
             return 8
         default:
             return 2
@@ -42,7 +42,7 @@ private enum Currency: String {
 public extension INCurrencyAmount {
     
     public func getBitcoinAmount() -> INCurrencyAmount? {
-        guard let bitcoinAmount = amount.convertToBitcoin(from: currencyCode) else {
+        guard let amount = amount, let currencyCode = currencyCode, let bitcoinAmount = amount.convertToBitcoin(from: currencyCode) else {
             return nil
         }
         
@@ -60,7 +60,7 @@ public extension NSDecimalNumber {
         
         let bitcoinAmount = self.dividing(by: currency.conversionRate)
         
-        return bitcoinAmount.rounding(accordingToBehavior: NSDecimalNumberHandler(roundingMode: .roundBankers, scale: Currency.BTC.subunit, raiseOnExactness: true, raiseOnOverflow: true, raiseOnUnderflow: true, raiseOnDivideByZero: true))
+        return bitcoinAmount.rounding(accordingToBehavior: NSDecimalNumberHandler(roundingMode: .bankers, scale: Currency.BTC.subunit, raiseOnExactness: true, raiseOnOverflow: true, raiseOnUnderflow: true, raiseOnDivideByZero: true))
     }
     
     
@@ -75,7 +75,7 @@ public extension NSDecimalNumber {
         
         let currencyAmount = self.multiplying(by: currency.conversionRate)
         
-        return currencyAmount.rounding(accordingToBehavior: NSDecimalNumberHandler(roundingMode: .roundBankers, scale: currency.subunit, raiseOnExactness: true, raiseOnOverflow: true, raiseOnUnderflow: true, raiseOnDivideByZero: true))
+        return currencyAmount.rounding(accordingToBehavior: NSDecimalNumberHandler(roundingMode: .bankers, scale: currency.subunit, raiseOnExactness: true, raiseOnOverflow: true, raiseOnUnderflow: true, raiseOnDivideByZero: true))
     }
 }
 
